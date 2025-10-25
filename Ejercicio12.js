@@ -32,7 +32,8 @@ if (isNaN(presupuesto) || presupuesto <= 0) {
     if (continuar !== "s") break;
   }
 
-  alert("Resumen de compra:\n" + "Productos comprados: " + contador + "\n" + "Total gastado: S/ " + total.toFixed(2) + "\n" +
+  alert("Resumen de compra:\n" + "Productos comprados: " + contador + "\n" + "Total gastado: S/ "
+     + total.toFixed(2) + "\n" +
     "Presupuesto restante: S/ " + (presupuesto - total).toFixed(2)
   );
 

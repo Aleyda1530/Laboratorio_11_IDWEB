@@ -79,7 +79,6 @@ do {
         alert("Cantidad de pares entre " + inicio + " y " + fin + ": " + contadorPares);
       }
       break;
-
     case "3":
       let numero = parseInt(prompt("Ingrese un número para la tabla:"));
       if (isNaN(numero)) {
@@ -92,11 +91,9 @@ do {
         alert("Tabla del " + numero + ":\n\n" + tabla);
       }
       break;
-
     case "4":
       alert("Programa finalizado.");
       break;
-
     default:
       alert("Opción no válida.");
   }
