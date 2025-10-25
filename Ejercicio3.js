@@ -1,5 +1,6 @@
 //EJERCICIO 3
 /* Contador de números pares e impares. Pide 10 números y muestra cuántos fueron pares y cuántos impares*/
+
 let edad = parseInt(prompt("Ingrese su edad:"));
 
 if (isNaN(edad) || edad < 0) {
