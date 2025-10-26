@@ -1,21 +1,23 @@
 //EJERCICIO 3
-/* Contador de números pares e impares. Pide 10 números y muestra cuántos fueron pares y cuántos impares*/
+// Ejercicio 3: Contador de números pares e impares
 
-let edad = parseInt(prompt("Ingrese su edad:"));
+let pares = 0;
+let impares = 0;
 
-if (isNaN(edad) || edad < 0) {
-  alert("Edad inválida. Intente nuevamente.");
-} 
-else if (edad < 12) {
-  alert("Niño");
-} 
-else if (edad <= 17) {
-  alert("Adolescente");
-} 
-else if (edad <= 59) {
-  alert("Adulto");
-} 
-else {
-  alert("Adulto mayor");
+for (let i = 1; i <= 10; i++) {
+    let numero = parseInt(prompt(`Ingrese el numero ${i}:`));
+
+    if (isNaN(numero)) {
+        alert(`Valor invalido. Se considera 0.`);
+        numero = 0;
+    }
+
+    if (numero % 2 === 0) {
+        pares++;
+    } else {
+        impares++;
+    }
 }
-console.log("Edad ingresada:", edad);
+
+alert(`Cantidad de números pares: ${pares}\nCantidad de números impares: ${impares}`);
+console.log(`Pares: ${pares}, Impares: ${impares}`);
